@@ -11,7 +11,7 @@ Every year, millions of hopeful drivers feel the pressure of preparing for their
 LicenseQuest will fully prepare users for both the Permit Test and the Behind-the-Wheel Drive Test. Using flashcards created from real test questions, users will learn all of the concepts, rules, and signs necessary to ace the Permit Test. LicenseQuest can also map users to actual test routes used by the local DMVs and give directions on how to complete the route. Prior to taking the practice test, beginner users can find safe, low-traffic areas to practice driving in a controlled environment. They can find parallel parking spots and empty parking lots to practice parking in stalls.
 How we built it
 
-We utilized Figma and React Native for the front end of our web app to develop the UI. In addition, we used for JavaScript our backend and made API calls to Google Maps and Inrix's routing, offstreet, on-street, and segment speed. For testing purposes, we tested the APIs through Postman.
+We utilized Figma and React Native for the front end of our web app to develop the UI. In addition, we used JS for our backend and made API calls to Google Maps and Inrix's routing, offstreet, on-street, and segment speed. For testing purposes, we tested the APIs through Postman.
 
 ### Challenges we ran into
 
@@ -36,7 +36,7 @@ In future iterations of LicenseQuest, we hope to add a leaderboard, badge certif
 - JavaScript
 - Inrix APIs
 - Google Map APIs
-- AWS (Attempted to use Amplify)
+- AWS Amplify
 - Postman -- Tool to test out the APIs
 
 
