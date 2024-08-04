@@ -1,5 +1,5 @@
 
-# LICENSE QUEST - INRIX HACK 2024
+# LICENSE QUEST - INRIX HACK 2023
 ## Collaborators: Abem Lucas, Lucas Amlicke, Nathan Yu, Nick Cheung, Jeromy Chang, Raphael Kusuma
 
 ### Inspiration
