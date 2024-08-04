@@ -1,0 +1,10 @@
+{
+  "aws_project_region": "us-east-1",
+  "aws_cloud_logic_custom": [
+    {
+      "name": "awsapi",
+      "endpoint": "https://anbcyexry6.execute-api.us-east-1.amazonaws.com/staging",
+      "region": "us-east-1"
+    }
+  ]
+}

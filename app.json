@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "app",
+    "slug": "app",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/Logo-Cut.png",
+      "backgroundColor": "#001937",
+      "resizeMode": "contain"
+    }
+  },
+  "ios":{
+    "config":{
+      "googleMapsApiKey":"AIzaSyDnlbyyDlH5dZfglmppvV1v9_HMuDVouHM"
+    }
+  },
+  "android":{
+    "config":{
+      "googleMaps":{
+        "apiKey":"AIzaSyDnlbyyDlH5dZfglmppvV1v9_HMuDVouHM"
+      }
+    }
+  }
+}

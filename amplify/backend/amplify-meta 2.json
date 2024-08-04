@@ -1,0 +1,106 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-licensequest-staging-220728-authRole",
+      "UnauthRoleArn": "arn:aws:iam::394009930518:role/amplify-licensequest-staging-220728-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::394009930518:role/amplify-licensequest-staging-220728-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-licensequest-staging-220728-deployment",
+      "UnauthRoleName": "amplify-licensequest-staging-220728-unauthRole",
+      "StackName": "amplify-licensequest-staging-220728",
+      "StackId": "arn:aws:cloudformation:us-east-1:394009930518:stack/amplify-licensequest-staging-220728/b43aee00-80de-11ee-841d-0ac1f8a45bc1",
+      "AmplifyAppId": "d3ow2mga1quyr2"
+    }
+  },
+  "api": {
+    "awsapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getBackroads"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "output": {
+        "ApiName": "awsapi",
+        "RootUrl": "https://anbcyexry6.execute-api.us-east-1.amazonaws.com/staging",
+        "ApiId": "anbcyexry6"
+      },
+      "lastPushTimeStamp": "2023-11-12T01:31:23.514Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-licensequest-staging-220728-deployment/amplify-cfn-templates/api/awsapi-cloudformation-template.json",
+        "logicalId": "apiawsapi"
+      }
+    }
+  },
+  "function": {
+    "getBackroads": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::394009930518:role/licensequestLambdaRolefb900191-staging",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:394009930518:function:getBackroads-staging",
+        "Name": "getBackroads-staging",
+        "LambdaExecutionRole": "licensequestLambdaRolefb900191-staging"
+      },
+      "lastPushTimeStamp": "2023-11-12T01:31:23.518Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-licensequest-staging-220728-deployment/amplify-cfn-templates/function/getBackroads-cloudformation-template.json",
+        "logicalId": "functiongetBackroads"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-licensequest-staging-220728-deployment",
+        "s3Key": "amplify-builds/getBackroads-346d686535594e534d41-build.zip"
+      }
+    },
+    "getToken": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::394009930518:role/licensequestLambdaRole233c5d23-staging",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:394009930518:function:getToken-staging",
+        "Name": "getToken-staging",
+        "LambdaExecutionRole": "licensequestLambdaRole233c5d23-staging"
+      },
+      "lastPushTimeStamp": "2023-11-12T01:31:23.519Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-licensequest-staging-220728-deployment/amplify-cfn-templates/function/getToken-cloudformation-template.json",
+        "logicalId": "functiongetToken"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-licensequest-staging-220728-deployment",
+        "s3Key": "amplify-builds/getToken-617871563759686b4e38-build.zip"
+      }
+    },
+    "test": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::394009930518:role/licensequestLambdaRole3a083681-staging",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:394009930518:function:test-staging",
+        "Name": "test-staging",
+        "LambdaExecutionRole": "licensequestLambdaRole3a083681-staging"
+      },
+      "lastPushTimeStamp": "2023-11-12T01:31:23.521Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-licensequest-staging-220728-deployment/amplify-cfn-templates/function/test-cloudformation-template.json",
+        "logicalId": "functiontest"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-licensequest-staging-220728-deployment",
+        "s3Key": "amplify-builds/test-56494b724c79482b4751-build.zip"
+      }
+    }
+  }
+}
